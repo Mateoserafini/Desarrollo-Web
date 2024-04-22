@@ -1,0 +1,281 @@
+/* fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+/* reset general mas algunas modificaciones */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+  color: #fff;
+
+}
+
+body {
+  background-color: #101010;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* index css completo */
+.index-h2{
+  color: #575757;
+  text-decoration: none;
+  display: flex;
+  font-size: 8rem;
+  justify-content: center;
+}
+
+.animation {
+  animation: alternate;
+  transition: all 0.2s ease-in;
+}
+
+.animation:hover {
+  transform: scale(1.2);
+  color: #ec7a7a;
+  text-shadow: 0 0 1rem #d40000,
+    0 0 3rem #d40000,
+    0 0 5rem #d40000,
+    0 0 7rem #d40000;
+}
+
+.animation:active {
+  color: #cca3a3;
+}
+
+
+/* haciendo responsive el index */
+
+@media (max-width: 600px) {
+  .animation {
+    font-size: 7rem;
+  }
+}
+
+
+
+/* header general para todas las paginas */
+
+header {
+  border-bottom: #d40000 1px solid ;
+}
+
+.header-tittle{
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  font-size: 4rem;
+}
+
+.animation-about:hover {
+  transform: scale(1.1);
+  color: #ec7a7a;
+  padding-left: 7rem;
+  text-shadow: 0 0 1rem #d40000,
+    0 0 3rem #d40000,
+    0 0 5rem #d40000,
+    0 0 7rem #d40000;
+}
+
+
+/* pagina sobre mi / about */
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* cards / botones para ir al resto de las paginas */
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.cards .red {
+  background-color: #d45c5c;
+}
+
+.cards .blue {
+  background-color: #f14f4f;
+}
+
+.cards .green {
+  background-color: #e24545;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 0.7rem;
+}
+
+ .cards .card:hover {
+  transform: scale(1.1, 1.1);
+} 
+
+.cards:hover>.card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+
+.galeria-port{
+  display: flex;
+  justify-content: center;
+}
+.imagen-port{
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.imagen-port > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 94.3%;
+  height: 100%;
+  top: 0;
+  left: 1;
+  transform: scale(0); 
+  background: #d40000a8;
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; 
+}
+
+@media (max-width: 992px) {
+  .hover-galeria {
+    width: 92%;
+  }
+}
+@media (max-width: 768px) {
+  .hover-galeria {
+    width: 95.7%;
+  }
+}
+.hover-galeria img {
+  width: 50px;
+}
+
+.hover-galeria p {
+  color: #ffffff;
+}
+
+.imagen-port:hover .hover-galeria {
+  transform: scale(1); 
+  opacity: 1; 
+}
+
+
+
+/* skills */
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #ffffff;
+  border: none;
+}
+.button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgb(233, 66, 66) 10.8%,
+    rgb(235, 116, 116) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+
+
+.button2 {
+  background-color: #10101000;
+  color: #fff;
+  width: 8.5em;
+  height: 2.9em;
+  border: #a13838 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.button2:hover {
+  background-color: #e75f5f;
+  cursor: pointer;
+}
+
+.button2 svg {
+  width: 1.6em;
+  margin: -0.1em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.button2:hover svg {
+  transform: translateX(5px);
+}
+
+.text2 {
+  padding-right: 1.7rem;
+}

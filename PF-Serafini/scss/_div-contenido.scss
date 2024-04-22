@@ -1,0 +1,7 @@
+@import "variables", "mixin";
+
+.divConten{
+    @include fondoContenido;
+    @include imgStyle;
+    @include imgHover;
+}

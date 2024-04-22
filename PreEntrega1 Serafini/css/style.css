@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+*{
+    margin:0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+H1, ul, li, nav{
+    display: inline;
+} 
+body{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #000000;
+}
+header{
+    background-color: #000000;
+    padding: 35px;
+    position: sticky;
+    top: 0%;
+    border-bottom: #260080 2px solid;
+    z-index: 10;
+}
+h1, li, a{
+    color: #ffffff;
+}
+
+h1{
+    padding: 0px 40% 0px 15px;
+    font-size: 28px;
+}
+.headerLinks{
+    padding: 0px 15px;
+}
+.bannerUniverse{
+    width: 100%;
+}
+.contactoBotton{
+    padding: 12px;
+    border-radius: 24px;
+    background-color: #260080;
+}
+main{
+    width: 65%;
+    color: #ffffff;
+    background-color: #101010;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 38px;
+}
+main h2{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+h2{
+    font-size: 25px;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+}
+main p a{
+    color: #260080;
+}
+.mainInputs{
+    width: 40%;
+    height: 200px;
+}
+label, input{
+    display: block;
+
+
+}
+label{
+    font-size: 20px;
+    padding: 5px 0px 5px 5px;
+}
+input{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+
+}
+
+.bottonEnviar{
+    margin-top: 10px;
+    display: inline;
+    background-color: #0c9200;
+    color: #ffffff;
+    border: 2px #064d00 solid;
+}
+
+.bottonReset{
+    display: inline;
+    background-color: #ca0000;
+    color: #ffffff;
+    border: 2px #470000 solid;
+}
+textarea{
+    display: block;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.imgGaleria{
+    padding: 5px;
+    display: inline;
+    width: 20%;
+    border-radius: 30px;
+    margin: 2px;
+    background-color: #202020 ;
+}
+.cardPrincipal{
+    position: absolute;
+    top: 462px;
+    right: 35px;
+    width: 26.6%;
+    border-radius: 20px;
+
+}
+.cardSobreNosotros{
+    position: absolute;
+    top: 522px;
+    right: 35px;
+    width: 25%;
+    border-radius: 20px;
+
+}
+.cardNoticias{
+    position: absolute;
+    top: 522px;
+    right: 35px;
+    width: 25%;
+    border-radius: 20px;
+}
+.cardContacto{
+    position: absolute;
+    top: 522px;
+    right: 35px;
+    width: 25%;
+    border-radius: 20px;
+}
+footer{
+    border-top: #260080 2px solid;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #000000;
+}
+
+footer ul{
+    margin:33% ;
+}
